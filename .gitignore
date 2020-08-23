@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # Save files
-/saves/QTable.txt
-/saves/GameCounter.txt
+saves/QTable.txt
+saves/GameCounter.txt
