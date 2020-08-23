@@ -2,6 +2,7 @@ import numpy as np
 import pygame
 import random
 import math
+import os
 from objects import Snake
 from objects import Segment
 from objects import Apple
@@ -157,7 +158,7 @@ def draw(grid, snake, apple, score, highscore):
 
 def run():
     deathAfter = 250 #Kill the snake after a certain number of moves to prevent it from getting stuck in a cycle 
-    qTableSave = "QTableDemo.txt"
+    qTableSave = os.path.join(os.sys.path[0], "saves", "QTableDemo.txt")
     fps = 30
     
     # Load existing Q-Table

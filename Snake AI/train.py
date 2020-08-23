@@ -2,6 +2,7 @@ import numpy as np
 import pygame
 import random
 import math
+import os
 from objects import Snake
 from objects import Segment
 from objects import Apple
@@ -167,8 +168,8 @@ def run():
     dynamicEpsilon = False #If True, the exploration rate will be reducing as more of the state-space is dicovered, if False the rate will be static
     training_episodes = 1000000
     deathAfter = 250 #Kill the snake after a certain number of moves to prevent it from getting stuck in a cycle 
-    qTableSave = "QTable.txt"
-    counterSave = "GameCounter.txt"
+    qTableSave = os.path.join(os.sys.path[0], "saves", "QTable.txt")
+    counterSave = os.path.join(os.sys.path[0], "saves", "GameCounter.txt")
     fps = 30
     displayMode = "Demo"
     
