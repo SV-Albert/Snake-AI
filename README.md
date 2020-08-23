@@ -8,7 +8,5 @@ demo.py runs the trained algorithm that has played 1000000 episodes
 play.py runs the playable version of the game (Use arrow keys to control the snake)
 
 Dependencies:
-
 PyGame: https://www.pygame.org/download.shtml
-
 NumPy: https://pypi.org/project/numpy/
