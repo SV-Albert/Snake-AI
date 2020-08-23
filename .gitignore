@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Save files
+/saves/QTable.txt
+/saves/GameCounter.txt
