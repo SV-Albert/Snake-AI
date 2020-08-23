@@ -191,7 +191,7 @@ def run():
     for episode in range(startEpisode, training_episodes + 1):
         killApp = False
         try:
-            if(episode % 1000 == 0):
+            if(episode % 100 == 0):
                 count = 0
                 qFile = open(qTableSave, "w")
                 for row in Q:
